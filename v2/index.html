@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Wayne Valim · lote 02</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>:root { --grao:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .2 0 0 0 0 .15 0 0 0 0 .15 0 0 0 .09 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"); }
+:root { --navy:#2d3270; --rose:#a66d86; --rose2:#8f5a72; --salmon:#df948d; --salmon2:#ca7d78; --blush:#eadbd8; --paper:#fbf8f6; --ink:#23212b; --muted:#6b6775; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--paper); color:var(--ink); font:400 17px/1.6 Montserrat, system-ui, sans-serif; }
+body::before { content:""; position:fixed; inset:0; pointer-events:none; opacity:.5; background-image:var(--grao); z-index:0; }
+.wrap { position:relative; z-index:1; max-width:1200px; margin:0 auto; padding:28px 24px 90px; }
+.topo { display:flex; align-items:flex-end; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+.topo .marca { display:flex; align-items:center; gap:12px; color:var(--rose2); font:600 12px/1 Montserrat; letter-spacing:.22em; text-transform:uppercase; }
+.topo .marca svg { width:34px; height:30px; }
+.topo h1 { font:300 clamp(30px,4.2vw,48px)/1.1 "Montserrat Alternates", sans-serif; margin:14px 0 0; max-width:760px; }
+.topo h1 em { font-style:normal; color:var(--rose); }
+.intro { color:var(--muted); max-width:700px; margin:12px 0 0; }
+nav.abas { position:sticky; top:0; z-index:5; display:flex; gap:6px; overflow-x:auto; padding:14px 0; margin:18px 0 8px; background:linear-gradient(var(--paper) 80%, rgba(251,248,246,0)); scrollbar-width:none; }
+nav.abas::-webkit-scrollbar { display:none; }
+nav.abas a { flex:none; text-decoration:none; color:var(--ink); font:500 14.5px Montserrat; padding:9px 16px; border-radius:999px; border:1px solid var(--blush); background:#fff; }
+nav.abas a.on { background:var(--rose2); border-color:var(--rose2); color:#fff; }
+nav.abas a.id { border-style:dashed; }
+.aba[hidden] { display:none; }
+.card { background:#fff; border:1px solid #f0e6e3; border-radius:26px; padding:24px; margin-top:22px; }
+.fmt { font:600 11.5px/1 Montserrat; letter-spacing:.14em; text-transform:uppercase; color:var(--rose2); }
+.card h2 { font:300 25px/1.25 "Montserrat Alternates", sans-serif; margin:8px 0 16px; }
+.card h2 small { display:block; font:400 13px/1.4 Montserrat; color:var(--muted); margin-top:4px; }
+.card h3 { font:600 13px/1.3 Montserrat; letter-spacing:.1em; text-transform:uppercase; color:var(--rose2); margin:18px 0 8px; }
+a { color:var(--rose2); }
+.duas { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.703fr); gap:22px; align-items:start; }
+.duas > .card { margin-top:22px; }
+.duas.iguais { grid-template-columns:1fr 1fr; }
+.carr { position:relative; }
+.trilho { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; border-radius:16px; scrollbar-width:none; }
+.trilho::-webkit-scrollbar { display:none; }
+.trilho img { flex:0 0 100%; width:100%; aspect-ratio:4/5; object-fit:cover; scroll-snap-align:start; display:block; }
+.seta { position:absolute; top:50%; transform:translateY(-50%); width:42px; height:42px; border-radius:50%; border:0; background:rgba(255,255,255,.9); color:var(--ink); font-size:22px; cursor:pointer; box-shadow:0 2px 10px rgba(0,0,0,.12); }
+.seta.ant { left:10px; } .seta.prox { right:10px; }
+.pontos { display:flex; justify-content:center; gap:7px; margin-top:12px; }
+.pontos button { width:8px; height:8px; border-radius:50%; border:0; padding:0; background:var(--blush); cursor:pointer; }
+.pontos button.on { background:var(--rose); width:22px; border-radius:6px; }
+video { width:100%; aspect-ratio:9/16; border-radius:16px; background:#111; display:block; }
+.capa-linha { display:flex; gap:14px; align-items:center; margin-top:14px; padding:12px; border-radius:16px; background:var(--paper); }
+.capa-linha img { width:74px; aspect-ratio:9/16; object-fit:cover; border-radius:10px; flex:none; }
+.capa-linha p { margin:0; font-size:14px; }
+details { margin-top:14px; }
+summary { cursor:pointer; font-weight:600; }
+details p { font-size:15px; margin:10px 0 0; }
+.artigo { max-width:780px; margin:30px auto 0; padding:36px 46px; }
+.artigo article h2 { font:400 22px/1.3 "Montserrat Alternates", sans-serif; margin:34px 0 8px; }
+.artigo article h3 { text-transform:none; letter-spacing:0; font-size:17px; color:var(--rose2); margin:24px 0 4px; }
+.artigo article hr { border:0; border-top:1px solid var(--blush); margin:26px 0; }
+.acoes { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:18px; }
+.acoes button { font:600 15px Montserrat; border-radius:999px; padding:12px; cursor:pointer; border:1.5px solid var(--ink); background:#fff; color:var(--ink); }
+.acoes .ok { background:var(--rose2); border-color:var(--rose2); color:#fff; }
+.acoes button.sel { outline:3px solid var(--salmon); outline-offset:2px; }
+.acoes textarea { grid-column:1/-1; font:15px Montserrat; border:1px solid var(--blush); border-radius:14px; padding:10px 12px; resize:vertical; background:var(--paper); }
+.acoes .resp { grid-column:1/-1; margin:0; font-size:14px; color:var(--rose2); }
+.enviar { position:sticky; bottom:16px; z-index:6; margin:36px auto 0; max-width:780px; display:flex; gap:12px; align-items:center; justify-content:space-between; background:var(--ink); color:#fff; border-radius:999px; padding:10px 10px 10px 24px; box-shadow:0 10px 30px rgba(35,33,43,.25); }
+.enviar button { font:600 15px Montserrat; border:0; border-radius:999px; padding:12px 20px; background:var(--salmon); color:#fff; cursor:pointer; }
+.enviar button:disabled { opacity:.4; cursor:default; }
+.base .regras { margin:0; padding-left:20px; } .base li { margin:6px 0; }
+.met-g { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+.met-g ol, .met-g ul { margin:0; padding-left:20px; } .met-g li { margin:6px 0; font-size:15.5px; }
+.decidir { background:#fdf1ef; border-radius:18px; padding:4px 18px 14px; margin-top:16px; }
+.tiles { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin-top:18px; }
+.tile { background:#fff; border:1px solid #f0e6e3; border-radius:22px; padding:18px; }
+.tile span { font:600 12px/1.3 Montserrat; letter-spacing:.08em; text-transform:uppercase; color:var(--rose2); }
+.tile b { display:block; font:300 40px/1.1 "Montserrat Alternates", sans-serif; margin:8px 0 4px; }
+.tile small { color:var(--muted); font-size:13.5px; }
+.diz { margin:0; padding-left:22px; } .diz li { margin:10px 0; }
+.graf { width:100%; height:auto; display:block; }
+.tab { width:100%; border-collapse:collapse; font-size:14.5px; margin-top:8px; }
+.tab th { text-align:left; font-weight:600; color:var(--muted); border-bottom:1px solid var(--blush); padding:8px 6px; }
+.tab td { border-bottom:1px solid #f4eceb; padding:8px 6px; }
+.tab tr.voce td { font-weight:700; background:#fdf1ef; }
+.dim { color:var(--muted); }
+.nota { color:var(--muted); font-size:13.5px; margin:12px 0 0; }
+.fmts { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+.fmtc { border:1px solid var(--blush); border-radius:18px; padding:16px; }
+.fmtc.dest { background:#fdf1ef; border-color:#f3d3cf; }
+.fmtc b { font:400 19px "Montserrat Alternates"; } .fmtc span { color:var(--muted); font-size:13px; margin-left:8px; }
+.fmtc dl { display:grid; grid-template-columns:1fr auto; gap:4px 10px; margin:12px 0 0; font-size:14.5px; } .fmtc dd { margin:0; font-weight:700; text-align:right; }
+.lst { list-style:none; margin:0; padding:0; } .lst li { display:flex; justify-content:space-between; gap:12px; padding:9px 0; border-bottom:1px solid #f4eceb; font-size:14.5px; }
+.lst a { color:var(--ink); text-decoration:none; } .lst a:hover { text-decoration:underline; } .lst span { flex:none; font-weight:700; color:var(--rose2); }
+.insp { color:var(--muted); margin:-6px 0 6px; max-width:760px; }
+.mocks { display:grid; grid-template-columns:1.25fr 1fr; gap:22px; align-items:start; }
+.mocks > div:last-child .m { max-width:330px; }
+/* ---------- maquetes (escalam com a largura: cqw) ---------- */
+.m { position:relative; overflow:hidden; container-type:inline-size; border-radius:14px; isolation:isolate; }
+.m h3, .m h4 { text-transform:none; letter-spacing:0; }
+.m .grao { position:absolute; inset:0; background-image:var(--grao); opacity:.9; mix-blend-mode:multiply; pointer-events:none; z-index:0; }
+.m .k { font:600 2.2cqw/1 Montserrat; letter-spacing:.24em; text-transform:uppercase; margin:0; }
+.m .cta { display:inline-block; text-decoration:none; font:600 2cqw/1 Montserrat; padding:1.8cqw 3.2cqw; border-radius:999px; background:var(--salmon2); color:#fff; }
+.m .rec { position:absolute; display:block; }
+.m .bw { filter:grayscale(1) contrast(1.08); }
+.m .ass { position:absolute; font:600 2.6cqw/1 Montserrat; letter-spacing:.18em; text-transform:uppercase; }
+.hero { aspect-ratio:16/9; }
+.post { aspect-ratio:4/5; }
+.reelc { aspect-ratio:9/16; }
+.tags span { display:table; background:var(--salmon2); color:#fff; font:600 2.2cqw/1.25 Montserrat; padding:.4cqw 1.2cqw; margin-bottom:.5cqw; }
+/* ideia 1 */
+.i1 { background:#f3ece6; color:var(--ink); }
+.i1-top { position:absolute; top:4cqw; left:5cqw; right:5cqw; display:flex; justify-content:space-between; font:600 1.5cqw Montserrat; letter-spacing:.2em; text-transform:uppercase; z-index:2; }
+.i1-palavra { position:absolute; left:0; right:0; top:3.6cqw; text-align:center; font:300 13.5cqw/1 "Montserrat Alternates"; letter-spacing:-.02em; color:var(--navy); z-index:1; }
+.i1-foto { position:absolute; left:37cqw; top:19.5cqw; width:26cqw; height:33cqw; background:#2b2a33; z-index:2; box-shadow:0 1cqw 3cqw rgba(0,0,0,.15); }
+.i1-foto img { width:100%; height:100%; object-fit:cover; object-position:50% 15%; filter:grayscale(1) contrast(1.05); }
+.i1-foto .clipe { position:absolute; left:2cqw; top:-3cqw; width:3cqw; }
+.i1 .tags { position:absolute; z-index:3; } .i1 .tags.e { left:15cqw; top:20cqw; } .i1 .tags.d { left:66cqw; top:36cqw; }
+.i1-txt { position:absolute; left:5cqw; bottom:4cqw; width:28cqw; z-index:3; font-size:1.7cqw; line-height:1.45; } .i1-txt p { margin:0 0 2cqw; }
+.i1c { background:#f3ece6; }
+.i1c .raios { position:absolute; left:50%; bottom:-30cqw; width:120cqw; height:120cqw; transform:translateX(-50%); background:repeating-conic-gradient(from 0deg, rgba(223,148,141,.55) 0 4deg, transparent 4deg 14deg); border-radius:50%; -webkit-mask:radial-gradient(circle, transparent 28%, #000 29%, #000 62%, transparent 63%); mask:radial-gradient(circle, transparent 28%, #000 29%, #000 62%, transparent 63%); z-index:0; }
+.i1c .k { position:absolute; top:7cqw; left:7cqw; color:var(--rose2); z-index:2; }
+.i1c h4 { position:absolute; top:12cqw; left:7cqw; right:7cqw; margin:0; font:300 5.4cqw/1.14 "Montserrat Alternates"; color:var(--navy); z-index:2; }
+.i1c h4 em { font-style:normal; color:var(--salmon2); }
+.i1c .rec { width:48cqw; left:26cqw; bottom:0; z-index:1; filter:grayscale(1) contrast(1.08) drop-shadow(.8cqw 0 0 #fff) drop-shadow(-.8cqw 0 0 #fff) drop-shadow(0 -.8cqw 0 #fff); }
+.i1c .ass { left:7cqw; bottom:6cqw; z-index:2; color:var(--ink); } .i1c .desl { position:absolute; right:7cqw; bottom:6cqw; font:600 2.6cqw Montserrat; letter-spacing:.18em; text-transform:uppercase; z-index:2; }
+.i1r { background:#f3ece6; }
+.i1r .rec { width:118cqw; left:-9cqw; bottom:0; filter:drop-shadow(1cqw 0 0 #fff) drop-shadow(-1cqw 0 0 #fff) drop-shadow(0 -1cqw 0 #fff); z-index:1; }
+.i1r .tags { position:absolute; left:7cqw; top:12cqw; z-index:2; } .i1r .tags span { font-size:6cqw; padding:.8cqw 2.4cqw; margin-bottom:1.2cqw; }
+.i1r .ass { right:6cqw; top:6cqw; font-size:3cqw; color:var(--rose2); z-index:3; white-space:nowrap; }
+/* ideia 2 */
+.i2 { background:var(--blush); display:grid; grid-template-columns:1fr 1fr; }
+.i2-bloco { background:var(--paper); padding:7cqw 5cqw 5cqw; border-bottom-right-radius:28cqw; position:relative; z-index:2; }
+.i2-bloco .k { color:var(--rose2); font-size:1.4cqw; }
+.i2-bloco h3 { font:800 6.8cqw/.95 Montserrat; text-transform:uppercase; color:var(--rose2); margin:2cqw 0 2.4cqw; letter-spacing:-.01em; text-transform:uppercase; }
+.i2-bloco p { font-size:1.6cqw; line-height:1.5; margin:0 0 2.6cqw; max-width:34cqw; }
+.i2-foto { position:relative; }
+.i2-foto .arco { position:absolute; right:-6cqw; top:3cqw; width:52cqw; height:52cqw; border-radius:50%; background:var(--rose); }
+.i2-foto .rec { width:40cqw; right:4cqw; bottom:0; filter:grayscale(1) contrast(1.05); }
+.i2c { background:var(--blush); }
+.i2c .arco2 { position:absolute; right:-14cqw; bottom:0; width:62cqw; height:96cqw; border-radius:31cqw 31cqw 0 0; background:var(--rose); overflow:hidden; }
+.i2c .arco2 .rec { width:70cqw; left:-4cqw; bottom:0; filter:grayscale(1) contrast(1.05); }
+.i2c .k { position:absolute; left:7cqw; top:8cqw; color:var(--rose2); }
+.i2c h4 { position:absolute; left:7cqw; top:14cqw; width:52cqw; margin:0; font:800 7.6cqw/.95 Montserrat; text-transform:uppercase; color:var(--rose2); z-index:2; }
+.i2c .ass { left:7cqw; bottom:7cqw; color:var(--ink); font-size:2.4cqw; }
+.i2r { background:var(--paper); }
+.i2r h4 { position:absolute; left:8cqw; right:8cqw; top:10cqw; margin:0; font:800 13cqw/.95 Montserrat; text-transform:uppercase; color:var(--rose2); }
+.i2r ol { position:absolute; left:8cqw; top:55cqw; margin:0; padding:0; list-style:none; counter-reset:c; font:600 5cqw/1.5 Montserrat; }
+.i2r li { counter-increment:c; } .i2r li::before { content:counter(c); display:inline-grid; place-items:center; width:6.5cqw; height:6.5cqw; border-radius:50%; background:var(--salmon2); color:#fff; font-size:3.6cqw; margin-right:2.4cqw; vertical-align:.4cqw; }
+.i2r .circ { position:absolute; left:12cqw; bottom:7cqw; width:76cqw; height:76cqw; border-radius:50%; background:var(--rose); overflow:hidden; border:2cqw solid var(--rose); }
+.i2r .circ img { width:100%; height:100%; object-fit:cover; object-position:50% 28%; filter:grayscale(1) contrast(1.05); display:block; }
+/* ideia 3 */
+.i3 { background:var(--salmon); color:#fff; }
+.i3 .aspas, .i3c .aspas { position:absolute; font:700 34cqw/1 "Montserrat Alternates"; color:#f7d6d1; left:3cqw; top:-6cqw; z-index:0; }
+.i3 .estrela { position:absolute; right:22cqw; bottom:-12cqw; width:36cqw; height:36cqw; background:repeating-conic-gradient(#f7d6d1 0 3deg, transparent 3deg 22deg); -webkit-mask:radial-gradient(circle, transparent 30%, #000 31%); mask:radial-gradient(circle, transparent 30%, #000 31%); border-radius:50%; z-index:0; }
+.i3-txt { position:absolute; left:6cqw; top:12cqw; width:46cqw; z-index:2; }
+.i3-txt h3 { font:600 3.6cqw/1.2 Montserrat; margin:0 0 1.6cqw; color:#fff; }
+.i3-txt .k { color:var(--ink); font-size:1.3cqw; margin-bottom:2.6cqw; }
+.i3-txt p { font-size:1.6cqw; line-height:1.5; margin:0 0 2.4cqw; color:#3a2a2e; } .i3 .cta { background:var(--ink); }
+.i3 .rec { width:34cqw; right:4cqw; bottom:0; z-index:1; filter:grayscale(1) contrast(1.1) drop-shadow(.6cqw 0 0 #fbf8f6) drop-shadow(-.6cqw 0 0 #fbf8f6) drop-shadow(0 -.6cqw 0 #fbf8f6); }
+.i3c { background:var(--salmon); }
+.i3c h4 { position:absolute; left:7cqw; width:56cqw; top:22cqw; margin:0; font:600 6cqw/1.2 Montserrat; color:#fff; z-index:2; }
+.i3c .rec { width:50cqw; right:-3cqw; bottom:0; z-index:1; filter:grayscale(1) contrast(1.1); }
+.i3c .ass { left:7cqw; bottom:7cqw; color:var(--ink); }
+.i3r { background:#5a5f3a; color:#efe3a8; }
+.i3r h4 { position:absolute; left:7cqw; right:7cqw; top:9cqw; margin:0; font:700 14cqw/.95 "Montserrat Alternates"; letter-spacing:-.02em; color:#f2df97; z-index:2; }
+.i3r .lado { position:absolute; left:7cqw; top:52cqw; width:48cqw; margin:0; font:700 3.4cqw/1.2 Montserrat; text-transform:uppercase; color:#fff; z-index:2; }
+.i3r .rec { width:110cqw; left:-5cqw; bottom:-18cqw; z-index:1; }
+@media (max-width:860px) {
+  .duas, .duas.iguais, .met-g, .mocks, .fmts { grid-template-columns:1fr; }
+  .tiles { grid-template-columns:1fr 1fr; }
+  .artigo { padding:24px 20px; } .wrap { padding:20px 14px 80px; }
+  .mocks > div:last-child .m { max-width:none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="topo"><div><div class="marca"><svg viewBox="0 0 120 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M60 87 C51 66 43 43 37 18 C23 30 24 75 57 70" stroke-width="9"/><path d="M60 87 C69 66 77 43 83 18 C97 30 96 75 63 70" stroke-width="9"/><path d="M60 87 L60 18" stroke-width="8"/></g></svg><span>Wayne Valim · lote 02</span></div>
+<h1>Wayne, aqui estão as peças, <em>como chegamos nelas</em> e algumas ideias</h1>
+<p class="intro">Veja cada peça e toque em <b>Aprovo</b> ou <b>Quero ajuste</b>. Nas abas de ideias, diga se a direção tem a sua cara. No fim, um botão manda tudo para o Paulo pelo WhatsApp. Nada é publicado sem o seu ok.</p></div></header>
+<nav class="abas"><a href="#pecas">As peças</a><a href="#metodo">Como fizemos</a><a href="#numeros">Seus números</a><a class="id" href="#ideia-1">Ideia 1 · Papel e recorte</a><a class="id" href="#ideia-2">Ideia 2 · Arco e bloco de cor</a><a class="id" href="#ideia-3">Ideia 3 · Aspas e frase</a></nav>
+<section class="aba" id="pecas">
+<div class="duas">
+<section class="card">
+ <span class="fmt">Instagram · carrossel · 7 slides</span>
+ <h2>Quando o seu sorriso vira permissão</h2>
+ <div class="carr"><div class="trilho"><img src="../midia/slide-01.jpg" alt="Slide 1" loading="eager"><img src="../midia/slide-02.jpg" alt="Slide 2" loading="lazy"><img src="../midia/slide-03.jpg" alt="Slide 3" loading="lazy"><img src="../midia/slide-04.jpg" alt="Slide 4" loading="lazy"><img src="../midia/slide-05.jpg" alt="Slide 5" loading="lazy"><img src="../midia/slide-06.jpg" alt="Slide 6" loading="lazy"><img src="../midia/slide-07.jpg" alt="Slide 7" loading="lazy"></div>
+ <button type="button" class="seta ant" aria-label="Slide anterior">‹</button><button type="button" class="seta prox" aria-label="Próximo slide">›</button></div>
+ <div class="pontos"><button type="button" aria-label="Slide 1"></button><button type="button" aria-label="Slide 2"></button><button type="button" aria-label="Slide 3"></button><button type="button" aria-label="Slide 4"></button><button type="button" aria-label="Slide 5"></button><button type="button" aria-label="Slide 6"></button><button type="button" aria-label="Slide 7"></button></div>
+ <details><summary>Texto do post</summary><p>A microagressão costuma ser sutil: uma interrupção, uma ironia, um tom de deboche. E o sorriso que a gente dá para aliviar o clima acaba ensinando que pode continuar.<br><br>Firmeza não é hostilidade. É presença.<br><br>Salve este post para a próxima reunião.<br><br>Na Comunidade Líder Corajosa, a gente treina exatamente isso: reagir com inteligência emocional e firmeza. [próximo passo a definir: link na bio ou DM]</p></details>
+ <div class="acoes" data-id="L02-02" data-nome="Carrossel" data-sim="Aprovo" data-nao="Quero ajuste"><button type="button" class="ok">Aprovo</button><button type="button" class="aj">Quero ajuste</button><textarea rows="2" placeholder="O que você mudaria? (opcional para aprovar)"></textarea><p class="resp" hidden></p></div>
+</section>
+<section class="card">
+ <span class="fmt">Instagram · Reel · 56 s</span>
+ <h2>Numa reunião tensa, qual destas é você?</h2>
+ <video controls playsinline preload="metadata" poster="../midia/capa.jpg" src="../midia/reel.mp4"></video>
+ <div class="capa-linha"><img src="../midia/capa.jpg" alt="Capa do Reel"><p><b>Capa do Reel.</b> É a imagem que fica na grade do seu perfil: você olhando para a câmera e a pergunta do começo do vídeo. Nas abas <a href="#ideia-1">Ideia 1</a>, <a href="#ideia-2">2</a> e <a href="#ideia-3">3</a> há outras capas possíveis.</p></div>
+ <details><summary>Texto do post</summary><p>Numa reunião tensa, qual destas é você?<br><br>1. Não escuta. Fica impaciente, não espera a vez das outras pessoas e defende a própria ideia sem ouvir.<br>2. Fala demais. Quando percebe que está perdendo o campo, fala mais, gesticula mais e traz até situações irrealistas.<br>3. Some. Fica calada, dá lugar para todo mundo e só se posiciona quando a bomba já explodiu.<br>4. Só vê risco. Traz todos os riscos possíveis e, sem todas as informações, prefere não opinar.<br><br>Nenhum desses padrões é um defeito. Todas nós temos um jeito de reagir quando a pressão aumenta. A autoconsciência é o que permite perceber o próprio padrão a tempo e escolher outra resposta.<br><br>Presença executiva começa aí.<br><br>Me conta nos comentários: qual é o seu número?<br><br>Toda quinta, no Comitê da Clareza da Comunidade Líder Corajosa, a gente conversa sobre situações reais como essa. [próximo passo a definir: link na bio ou DM]</p></details>
+ <div class="acoes" data-id="L02-03" data-nome="Reel" data-sim="Aprovo" data-nao="Quero ajuste"><button type="button" class="ok">Aprovo</button><button type="button" class="aj">Quero ajuste</button><textarea rows="2" placeholder="O que você mudaria? (opcional para aprovar)"></textarea><p class="resp" hidden></p></div>
+</section>
+</div>
+<section class="card artigo">
+ <span class="fmt">LinkedIn · artigo</span>
+ <h2>Quando o seu sorriso vira permissão</h2>
+ <article><p><strong>Microagressão não para sozinha. Ela para quando você muda o padrão.</strong></p>
+<hr>
+<p>Pense em uma gerente de TI apresentando o andamento de um projeto importante. Ela conhece o cronograma, os riscos e a decisão que precisa sair daquela reunião. Na metade da explicação, um colega a interrompe com um comentário irônico. Algumas pessoas riem.</p>
+<p>E ela também ri.</p>
+<p>Um riso curto, meio sem graça, para aliviar o clima. Depois retoma a apresentação um pouco mais rápido, com a voz um pouco mais baixa, e termina antes do que tinha planejado.</p>
+<p>À noite, ainda está pensando na cena. No que poderia ter dito. No porquê de ter sorrido.</p>
+<p>Sofrido, né?</p>
+<p>Talvez você já tenha vivido algo parecido. Uma interrupção, uma ironia, um tom de deboche no meio de uma fala séria. Nada grave o suficiente para virar um problema formal. Mas o bastante para deixar um incômodo que volta horas depois.</p>
+<h2>A microagressão é sutil, e por isso passa</h2>
+<p>No ambiente corporativo, a microagressão raramente vem como um ataque direto. Ela é sutil. Aparece na interrupção, na ironia, no comentário em tom de brincadeira que diminui quem está falando.</p>
+<p>Justamente por ser sutil, é fácil deixar passar. E é aí que mora a armadilha.</p>
+<p>Diante dela, muitas mulheres reagem de dois jeitos: com aquele riso forçado ou congelando em um silêncio que dói depois.</p>
+<p>As duas reações são compreensíveis. Elas protegem a gente no momento. Mas nenhuma delas muda o que aconteceu, e nenhuma delas impede que aconteça de novo.</p>
+<h2>A crença por trás do sorriso</h2>
+<p>Então fica a pergunta: por que sorrimos quando alguém nos desrespeita?</p>
+<p>Desde cedo, muitas de nós aprendemos que manter o clima leve é responsabilidade nossa. Que reagir é criar confusão. Que é melhor deixar para lá do que parecer uma pessoa difícil.</p>
+<p>Já escrevi aqui que o que nos silencia nas reuniões, normalmente, não é falta de conhecimento nem de argumento. É o medo do conflito, a vontade de manter o ambiente em harmonia e a preocupação em não parecer difícil.</p>
+<p>Com a microagressão acontece o mesmo. Só que, nesse caso, o silêncio ou o sorriso comunicam algo que não queremos comunicar.</p>
+<p>Quando você sorri para aliviar o clima, quem te desrespeitou não se sente constrangido. Sente permissão.</p>
+<p>Se você sorri de nervoso quando alguém te desrespeita, está ensinando que podem continuar.</p>
+<p>E a sua linguagem corporal passa a comunicar insegurança, mesmo quando você é competente. Mesmo quando você é a pessoa que mais conhece aquele assunto na sala.</p>
+<p>Quero ser clara: a responsabilidade pelo desrespeito é de quem desrespeita. Não estou dizendo que a culpa é sua. Estou dizendo que a forma como reagimos também ensina às pessoas como podem nos tratar. E essa parte está nas nossas mãos.</p>
+<h2>Firmeza não é hostilidade</h2>
+<p>Talvez você esteja pensando: &quot;Mas eu não quero ser grosseira. Não quero criar um problema com alguém com quem trabalho todos os dias.&quot;</p>
+<p>Nem precisa.</p>
+<p>Reagir não significa transformar toda interrupção em uma disputa. Às vezes um colega interrompe por entusiasmo, por pressa, sem perceber. Nem todo comentário atravessado é uma microagressão, e nem toda pessoa que faz um comentário assim quer diminuir você.</p>
+<p>Também não significa expor ninguém na frente do grupo, responder no mesmo tom ou devolver a ironia.</p>
+<p>Firmeza não é hostilidade. É presença.</p>
+<p>É mostrar, com calma, que você percebeu e que vai continuar ocupando o seu espaço.</p>
+<h2>Atitudes para a próxima reunião</h2>
+<p>Na prática, a resposta cabe em poucos segundos. Os três primeiros passos são os que ensino às mulheres que acompanho. Os dois últimos ajudam a chegar preparada.</p>
+<h3>1. Pare. Não sorria.</h3>
+<p>O primeiro movimento é interromper o automático. Quando a ironia ou a interrupção acontecer, faça uma pausa curta e não ofereça o sorriso que alivia o clima.</p>
+<p>Essa pausa, sozinha, já comunica que aquilo não passou despercebido.</p>
+<h3>2. Sustente o olhar por alguns segundos</h3>
+<p>Olhe para a pessoa por alguns segundos. Sem desafiar, sem hostilidade. Só presença.</p>
+<p>O seu corpo diz o que as palavras ainda não disseram.</p>
+<h3>3. Responda com uma frase simples</h3>
+<p>Não é hora de discurso nem de justificativa. Uma frase curta basta:</p>
+<ul>
+<li>&quot;Prefiro manter o nível da conversa.&quot;</li>
+<li>&quot;Vou concluir o meu ponto.&quot;</li>
+</ul>
+<p>Curto, elegante, firme. Depois, siga de onde parou, no mesmo ritmo e no mesmo tom de voz.</p>
+<h3>4. Escolha a sua frase antes de precisar dela</h3>
+<p>Na hora, o corpo costuma reagir antes da cabeça. Por isso, vale chegar à reunião com a sua frase escolhida.</p>
+<p>Escolha uma, diga em voz alta algumas vezes em casa, e deixe que ela fique disponível para quando o momento chegar.</p>
+<h3>5. Depois, observe o que você sentiu</h3>
+<p>No fim do dia, volte à cena por alguns minutos. Que emoção apareceu? Constrangimento? Raiva? Medo de parecer difícil?</p>
+<p>Reconhecer o que te afeta é o que permite, na próxima vez, responder com inteligência emocional e não no piloto automático.</p>
+<h2>Considerações finais</h2>
+<p>Ao longo da minha trajetória como CIO e mentora, aprendi que o posicionamento não aparece só na grande apresentação ou na reunião com a diretoria. Ele aparece também nesses momentos pequenos, quase invisíveis. Nos três segundos depois de uma ironia.</p>
+<p>É ali que você decide se vai sorrir para aliviar o clima ou sustentar a sua posição.</p>
+<p>Sustentar a posição não é deixar de ser gentil. É ser gentil sem abrir mão do seu espaço.</p>
+<p>Microagressão não para sozinha.</p>
+<p>Ela para quando você muda o padrão.</p>
+<p>Na Comunidade Líder Corajosa, a gente treina exatamente isso: reagir com inteligência emocional e firmeza, em situações reais, ao lado de outras mulheres que vivem os mesmos desafios da liderança.</p>
+<p>Se isso já aconteceu com você, será um prazer continuar essa conversa por lá.</p>
+<p><a href="https://waynevalim.com.br/comunidade/">Comunidade Líder Corajosa</a></p></article>
+ <div class="acoes" data-id="L02-01" data-nome="Artigo" data-sim="Aprovo" data-nao="Quero ajuste"><button type="button" class="ok">Aprovo</button><button type="button" class="aj">Quero ajuste</button><textarea rows="2" placeholder="O que você mudaria? (opcional para aprovar)"></textarea><p class="resp" hidden></p></div>
+</section></section><section class="aba" id="metodo" hidden><section class="card base"><h2>Como trabalhamos</h2><ul class="regras">
+<li><b>A fonte é o que você já faz.</b> Reels, o Comitê da Clareza, aulas e os seus artigos. Você não precisa gravar nada a mais.</li>
+<li><b>Você aprova tudo.</b> Um lote por vez, por esta página. Nada é publicado sem o seu ok.</li>
+<li><b>Ninguém é identificado.</b> Nunca nome de mentorada nem dado de empresa; casos só sem nome, como no LIRA.</li>
+<li><b>Os números guiam as escolhas.</b> Lemos o seu Instagram dos últimos 12 meses, só leitura (aba <a href="#numeros">Seus números</a>).</li></ul></section><section class="card met" id="met-carrossel"><span class="fmt">Instagram · carrossel</span><h2>Quando o seu sorriso vira permissão</h2>
+<div class="met-g"><div><h3>De onde veio</h3><p>Do seu Reel de 01/03/2026, “Microagressão não para sozinha”. Foi o post que mais saiu da bolha em 12 meses: 35 compartilhamentos e alcance de 568, o dobro de um post típico seu.</p><h3>Como fizemos</h3><ol><li>Os slides 1 a 6 são a sua fala no Reel, cortada em frases curtas, sem reescrever.</li><li>O slide 7 é a frase da legenda daquele Reel (“Microagressão não para sozinha. Ela para quando você muda o padrão.”) e o pedido para salvar.</li><li>Capa com a sua foto oficial em preto e branco, em tom marinho; fecho com a foto de blusa vinho. Títulos na Montserrat Alternates, a versão para web da fonte do seu livro de marca.</li></ol></div>
+<div><h3>Decisões e por quê</h3><ul class="decs"><li><b>Carrossel, e não um Reel novo.</b> Carrossel é o seu formato mais salvo: 3,2 salvamentos por post, contra 1,2 dos Reels. Dica prática com passos é o que as pessoas guardam.</li><li><b>As suas palavras, não texto novo.</b> A mensagem já tinha provado que funciona. O trabalho foi só de forma.</li><li><b>Pedir para salvar, e não para comentar.</b> Uma ação só por peça. Neste, o objetivo é ser guardado para a próxima reunião.</li></ul><div class="decidir"><h3>Para você decidir</h3><ul><li>O fim da legenda: link na bio, mensagem no direct ou nada?</li></ul></div></div></div></section><section class="card met" id="met-reel"><span class="fmt">Instagram · Reel · 56 s</span><h2>Numa reunião tensa, qual destas é você?</h2>
+<div class="met-g"><div><h3>De onde veio</h3><p>Da gravação de 05/11/2026 para o Comitê da Clareza, sobre presença executiva: 16 minutos, só você falando para a câmera. Transcrevemos tudo no computador, sem mandar o vídeo para fora.</p><h3>Como fizemos</h3><ol><li>Escolhemos o trecho em que você descreve 4 jeitos de se perder numa reunião difícil (de 09:36 a 12:06) e fechamos com “a autoconsciência faz isso com a gente”.</li><li>Cortamos sempre em silêncio e conferimos com uma segunda transcrição que nenhuma palavra ficou pela metade.</li><li>A pergunta aparece escrita nos 3 primeiros segundos; cada jeito ganha um título; as legendas seguem a sua fala palavra por palavra, nas cores da marca; o texto fica na altura do peito, para não cobrir o seu rosto.</li><li>No fim, um cartão com a tulipa e a Comunidade Líder Corajosa.</li></ol></div>
+<div><h3>Decisões e por quê</h3><ul class="decs"><li><b>Este trecho, e não a história da aluna.</b> A equipe já publicou essa história em 09/11. Este trecho ainda não tinha sido usado, e o formato “qual destas é você?” é de identificação: a pessoa se reconhece e manda para uma amiga.</li><li><b>Títulos pelo comportamento, não pela letra do DISC.</b> “Não escuta”, “Fala demais”, “Some”, “Só vê risco”: quem ainda não é da comunidade entende sem conhecer o DISC.</li><li><b>Pedir o número nos comentários.</b> É uma ação só e fácil de responder. Comentário ajuda o Reel a chegar em mais gente.</li><li><b>56 segundos, sem música.</b> Entre 45 e 60 s é o tempo que funciona nos seus Reels com você falando. A música, se quiser, entra no próprio Instagram na hora de publicar.</li></ul><div class="decidir"><h3>Para você decidir</h3><ul><li>O fim da legenda: link na bio, mensagem no direct ou nada?</li><li>Usar trechos do Comitê nas redes: você está de acordo?</li></ul></div></div></div></section><section class="card met" id="met-artigo"><span class="fmt">LinkedIn · artigo</span><h2>Quando o seu sorriso vira permissão</h2>
+<div class="met-g"><div><h3>De onde veio</h3><p>Do mesmo Reel da microagressão e da legenda dele. A voz vem de 6 artigos seus no LinkedIn, que viraram um guia de como você escreve.</p><h3>Como fizemos</h3><ol><li>Seguimos a estrutura dos seus artigos atuais: uma cena, a crença por trás dela, a virada, as atitudes e um convite no fim.</li><li>Expressões suas entraram como são: “Sofrido, né?”, “Então fica a pergunta”, “muitas de nós aprendemos”, “ao longo da minha trajetória como CIO e mentora”.</li><li>Sem hashtags e sem emojis, como na sua fase atual.</li></ol></div>
+<div><h3>Decisões e por quê</h3><ul class="decs"><li><b>Um caso de abertura inventado.</b> A gerente de TI que ri e encurta a apresentação é uma cena genérica. Nunca usamos caso real de mentorada nem dado de empresa.</li><li><b>Duas atitudes a mais (escolher a frase antes e observar a emoção depois).</b> Os três passos do Reel resolvem a hora; estas duas ajudam a chegar preparada e a aprender com a cena.</li><li><b>Um parágrafo que protege o colega.</b> Nem toda interrupção é microagressão. Firmeza não é hostilidade: é o “firme, gentil e corajosa” da sua marca.</li></ul><div class="decidir"><h3>Para você decidir</h3><ul><li>Título: “Quando o seu sorriso vira permissão” ou “Microagressão não para sozinha”?</li><li>Caso de abertura: manter a cena inventada ou trocar por uma situação real das suas mentorias, sem nome e sem detalhe que identifique?</li><li>Convite: só a comunidade ou também o próximo LIRA, quando houver data?</li><li>A frase “Os três primeiros passos são os que ensino às mulheres que acompanho”: é assim que você diria?</li></ul></div></div></div></section></section><section class="aba" id="numeros" hidden>
+<div class="tiles">
+ <div class="tile"><span>Seguidores</span><b>20.598</b><small>170 posts em 12 meses</small></div>
+ <div class="tile"><span>Alcance de um post típico</span><b>277</b><small>1,3% dos seguidores, nos últimos 12 meses</small></div>
+ <div class="tile"><span>Últimos 30 dias</span><b>128</b><small>por post, em 15 posts · nos 30 dias antes: 170</small></div>
+ <div class="tile"><span>O que mais saiu da bolha</span><b>35</b><small>compartilhamentos do Reel da microagressão (01/03)</small></div>
+</div>
+<section class="card"><h2>O que os números dizem</h2><ol class="diz">
+<li><b>O alcance de um post típico caiu</b> de 398 (dez/25) para 116 (nov/26), e caiu mais desde setembro, quando o número de Reels por mês dobrou. Mais posts parecidos não trouxeram mais gente.</li>
+<li><b>Carrossel é o que as pessoas guardam</b> (3,2 salvos por post) e <b>Reel é o que alcança</b> (308 pessoas num post típico). Por isso a dica prática virou carrossel e a pergunta virou Reel.</li>
+<li><b>O que sai da bolha é identificação.</b> A microagressão (35 compartilhamentos) e os 6 anos da comunidade (os dois Reels de outubro alcançaram 776 e 529) falam da vida de quem assiste.</li>
+<li><b>Ritmo não é tudo.</b> Entre as referências do seu livro de marca, quem mais cresceu posta 17 vezes por semana; quem tem mais conversa por seguidor posta 2 vezes. Você está entre as duas.</li></ol></section>
+<section class="card"><h2>Alcance de um post típico, mês a mês <small>metade dos posts alcançou mais que isso, metade menos · passe o mouse nas barras</small></h2><svg viewBox="0 0 760 210" role="img" aria-label="Alcance de um post típico, mês a mês" class="graf"><line x1="0" x2="760" y1="182" y2="182" stroke="#23212b" stroke-opacity=".15"/><g><title>dez/25: 398 de alcance num post típico · 14 posts</title><rect x="0.0" y="0" width="63.333333333333336" height="210" fill="transparent"/><path d="M16.666666666666668,182V56.918918918918905Q16.666666666666668,52.918918918918905 20.666666666666668,52.918918918918905H42.66666666666667Q46.66666666666667,52.918918918918905 46.66666666666667,56.918918918918905V182Z" fill="#a66d86"/><text x="31.666666666666668" y="201" text-anchor="middle" font-size="11.5" fill="#6b6775">dez/25</text></g><g><title>jan/26: 481 de alcance num post típico · 9 posts</title><rect x="63.333333333333336" y="0" width="63.333333333333336" height="210" fill="transparent"/><path d="M80.0,182V30.0Q80.0,26.0 84.0,26.0H106.0Q110.0,26.0 110.0,30.0V182Z" fill="#a66d86"/><text x="95.0" y="19.0" text-anchor="middle" font-size="13" font-weight="700" fill="#23212b">481</text><text x="95.0" y="201" text-anchor="middle" font-size="11.5" fill="#6b6775">jan/26</text></g><g><title>fev/26: 344 de alcance num post típico · 12 posts</title><rect x="126.66666666666667" y="0" width="63.333333333333336" height="210" fill="transparent"/><path d="M143.33333333333334,182V74.43243243243242Q143.33333333333334,70.43243243243242 147.33333333333334,70.43243243243242H169.33333333333334Q173.33333333333334,70.43243243243242 173.33333333333334,74.43243243243242V182Z" fill="#a66d86"/><text x="158.33333333333334" y="201" text-anchor="middle" font-size="11.5" fill="#6b6775">fev/26</text></g><g><title>mar/26: 446 de alcance num post típico · 17 posts</title><rect x="190.0" y="0" width="63.333333333333336" height="210" fill="transparent"/><path d="M206.66666666666666,182V41.351351351351354Q206.66666666666666,37.351351351351354 210.66666666666666,37.351351351351354H232.66666666666666Q236.66666666666666,37.351351351351354 236.66666666666666,41.351351351351354V182Z" fill="#a66d86"/><text x="221.66666666666666" y="201" text-anchor="middle" font-size="11.5" fill="#6b6775">mar/26</text></g><g><title>abr/26: 418 de alcance num post típico · 13 posts</title><rect x="253.33333333333334" y="0" width="63.333333333333336" height="210" fill="transparent"/><path d="M270.0,182V50.43243243243242Q270.0,46.43243243243242 274.0,46.43243243243242H296.0Q300.0,46.43243243243242 300.0,50.43243243243242V182Z" fill="#a66d86"/><text x="285.0" y="201" text-anchor="middle" font-size="11.5" fill="#6b6775">abr/26</text></g><g><title>mai/26: 246 de alcance num post típico · 17 posts</title><rect x="316.6666666666667" y="0" width="63.333333333333336" height="210" fill="transparent"/><path d="M333.33333333333337,182V106.21621621621621Q333.33333333333337,102.21621621621621 337.33333333333337,102.21621621621621H359.33333333333337Q363.33333333333337,102.21621621621621 363.33333333333337,106.21621621621621V182Z" fill="#a66d86"/><text x="348.33333333333337" y="201" text-anchor="middle" font-size="11.5" fill="#6b6775">mai/26</text></g><g><title>jun/26: 198 de alcance num post típico · 12 posts</title><rect x="380.0" y="0" width="63.333333333333336" height="210" fill="transparent"/><path d="M396.6666666666667,182V121.78378378378378Q396.6666666666667,117.78378378378378 400.6666666666667,117.78378378378378H422.6666666666667Q426.6666666666667,117.78378378378378 426.6666666666667,121.78378378378378V182Z" fill="#a66d86"/><text x="411.6666666666667" y="201" text-anchor="middle" font-size="11.5" fill="#6b6775">jun/26</text></g><g><title>jul/26: 303 de alcance num post típico · 10 posts</title><rect x="443.33333333333337" y="0" width="63.333333333333336" height="210" fill="transparent"/><path d="M460.00000000000006,182V87.72972972972973Q460.00000000000006,83.72972972972973 464.00000000000006,83.72972972972973H486.00000000000006Q490.00000000000006,83.72972972972973 490.00000000000006,87.72972972972973V182Z" fill="#a66d86"/><text x="475.00000000000006" y="201" text-anchor="middle" font-size="11.5" fill="#6b6775">jul/26</text></g><g><title>ago/26: 269 de alcance num post típico · 15 posts</title><rect x="506.6666666666667" y="0" width="63.333333333333336" height="210" fill="transparent"/><path d="M523.3333333333334,182V98.75675675675676Q523.3333333333334,94.75675675675676 527.3333333333334,94.75675675675676H549.3333333333334Q553.3333333333334,94.75675675675676 553.3333333333334,98.75675675675676V182Z" fill="#a66d86"/><text x="538.3333333333334" y="201" text-anchor="middle" font-size="11.5" fill="#6b6775">ago/26</text></g><g><title>set/26: 166 de alcance num post típico · 19 posts</title><rect x="570.0" y="0" width="63.333333333333336" height="210" fill="transparent"/><path d="M586.6666666666666,182V132.16216216216216Q586.6666666666666,128.16216216216216 590.6666666666666,128.16216216216216H612.6666666666666Q616.6666666666666,128.16216216216216 616.6666666666666,132.16216216216216V182Z" fill="#a66d86"/><text x="601.6666666666666" y="201" text-anchor="middle" font-size="11.5" fill="#6b6775">set/26</text></g><g><title>out/26: 178 de alcance num post típico · 14 posts</title><rect x="633.3333333333334" y="0" width="63.333333333333336" height="210" fill="transparent"/><path d="M650.0,182V128.27027027027026Q650.0,124.27027027027026 654.0,124.27027027027026H676.0Q680.0,124.27027027027026 680.0,128.27027027027026V182Z" fill="#a66d86"/><text x="665.0" y="201" text-anchor="middle" font-size="11.5" fill="#6b6775">out/26</text></g><g><title>nov/26: 116 de alcance num post típico · 10 posts</title><rect x="696.6666666666667" y="0" width="63.333333333333336" height="210" fill="transparent"/><path d="M713.3333333333334,182V148.3783783783784Q713.3333333333334,144.3783783783784 717.3333333333334,144.3783783783784H739.3333333333334Q743.3333333333334,144.3783783783784 743.3333333333334,148.3783783783784V182Z" fill="#a66d86"/><text x="728.3333333333334" y="137.3783783783784" text-anchor="middle" font-size="13" font-weight="700" fill="#23212b">116</text><text x="728.3333333333334" y="201" text-anchor="middle" font-size="11.5" fill="#6b6775">nov/26</text></g></svg><details><summary>Ver em tabela</summary><table class="tab"><tr><th>Mês</th><th>Alcance típico</th><th>Posts</th></tr><tr><td>dez/25</td><td>398</td><td>14</td></tr><tr><td>jan/26</td><td>481</td><td>9</td></tr><tr><td>fev/26</td><td>344</td><td>12</td></tr><tr><td>mar/26</td><td>446</td><td>17</td></tr><tr><td>abr/26</td><td>418</td><td>13</td></tr><tr><td>mai/26</td><td>246</td><td>17</td></tr><tr><td>jun/26</td><td>198</td><td>12</td></tr><tr><td>jul/26</td><td>303</td><td>10</td></tr><tr><td>ago/26</td><td>269</td><td>15</td></tr><tr><td>set/26</td><td>166</td><td>19</td></tr><tr><td>out/26</td><td>178</td><td>14</td></tr><tr><td>nov/26</td><td>116</td><td>10</td></tr></table></details></section>
+<section class="card"><h2>Formato <small>12 meses, por post</small></h2><div class="fmts"><div class="fmtc"><b>Reels</b><span>75 posts</span>
+<dl><dt>Alcance típico</dt><dd>308</dd><dt>Salvos por post</dt><dd>1,2</dd><dt>Compartilhados</dt><dd>2,1</dd></dl></div><div class="fmtc dest"><b>Carrosséis</b><span>41 posts</span>
+<dl><dt>Alcance típico</dt><dd>228</dd><dt>Salvos por post</dt><dd>3,2</dd><dt>Compartilhados</dt><dd>1,0</dd></dl></div><div class="fmtc"><b>Posts de uma imagem</b><span>54 posts</span>
+<dl><dt>Alcance típico</dt><dd>294</dd><dt>Salvos por post</dt><dd>2,4</dd><dt>Compartilhados</dt><dd>1,2</dd></dl></div></div></section>
+<div class="duas iguais">
+<section class="card"><h2>Mais compartilhados <small>o que sai da bolha</small></h2><ul class="lst"><li><a href="https://www.instagram.com/reel/DVV-SdZCIAz/" target="_blank" rel="noopener">Reel · 01/03 · Microagressão não para sozinha.</a><span>35 compart.</span></li><li><a href="https://www.instagram.com/p/DR-IgU-D0m5/" target="_blank" rel="noopener">Post · 07/12 · Domingo é o momento perfeito para ajustar a mente antes de ajustar a agenda.</a><span>11 compart.</span></li><li><a href="https://www.instagram.com/reel/DSprXMHiC5c/" target="_blank" rel="noopener">Reel · 24/12 · Que esse fim de ano seja mais sobre presença do que sobre pressa.</a><span>10 compart.</span></li></ul></section>
+<section class="card"><h2>Os 5 de maior alcance <small>clique para abrir</small></h2><ul class="lst"><li><a href="https://www.instagram.com/p/DSBIIMxj-8k/" target="_blank" rel="noopener">Post · 08/12 · Última Masterclass do Ano, e sua mesa diz mais sobre você do que imagina 🍽️✨</a><span>1.704 pessoas</span></li><li><a href="https://www.instagram.com/p/DXXlEZtFuyx/" target="_blank" rel="noopener">Carrossel · 20/04 · #tbt: Quem esteve no LIRA 2026?</a><span>1.331 pessoas</span></li><li><a href="https://www.instagram.com/p/DWZ_okUFXuF/" target="_blank" rel="noopener">Post · 27/03 · Tem dias que você não consegue explicar direito.</a><span>1.322 pessoas</span></li><li><a href="https://www.instagram.com/reel/DXcukhQCKJ6/" target="_blank" rel="noopener">Reel · 22/04 · O que acontece quando uma líder para por um dia inteiro para se ouvir?</a><span>961 pessoas</span></li><li><a href="https://www.instagram.com/p/DR-IgU-D0m5/" target="_blank" rel="noopener">Post · 07/12 · Domingo é o momento perfeito para ajustar a mente antes de ajustar a agenda.</a><span>898 pessoas</span></li></ul></section>
+</div>
+<section class="card"><h2>Referências <small>números públicos dos últimos 30 posts de cada conta · as 4 contas do seu livro de marca</small></h2>
+<table class="tab ref"><tr><th>Conta</th><th>Seguidores</th><th>Posts por semana</th><th>Reels</th><th>Curtidas e comentários por mil seguidores</th></tr><tr class=voce><td>@waynevalim</td><td>20.598</td><td>3,6</td><td>70%</td><td>0,9</td></tr><tr><td>@paulatissot</td><td>64.056</td><td>17,5</td><td>53%</td><td>0,44</td></tr><tr><td>@francycarmen</td><td>6.964</td><td>2,3</td><td>33%</td><td>7,4</td></tr><tr><td>@euisabelemoreira</td><td>390.264</td><td>14,0</td><td>93%</td><td>0,01</td></tr><tr><td>@vanusacardosocoaching</td><td colspan="4" class="dim">não responde na API</td></tr></table>
+<p class="nota">O alcance das outras contas não é público; por isso a comparação é por ritmo, formato e conversa por seguidor. Lido em 20/11. Só leitura: nada é publicado nem impulsionado daqui.</p></section></section><section class="aba" id="ideia-1" hidden><section class="card ideia"><span class="fmt">Ideia 1 · direção visual</span><h2>Papel e recorte</h2><p class="insp">Papel com textura, uma palavra enorme, a sua foto recortada com contorno branco e etiquetas em salmão, como bilhetes colados. Editorial e próximo, sem ficar sério demais. Os textos são provisórios: o que vale aqui é o jeito.</p>
+<h3>Página da comunidade</h3><div class="m hero i1"><div class="grao"></div>
+<div class="i1-top"><span>Comunidade</span><span>há 6 anos com mulheres líderes</span></div>
+<div class="i1-palavra">Corajosa</div>
+<div class="i1-foto"><img src="midia/foto-o15.jpg" alt=""><svg class="clipe" viewBox="0 0 30 90"><path d="M10 80V18a8 8 0 0 1 16 0v52a12 12 0 0 1-24 0V22" fill="none" stroke="#9a9aa2" stroke-width="3" stroke-linecap="round"/></svg></div>
+<div class="tags e"><span>toda quinta,</span><span>ao vivo, no</span><span>Comitê da Clareza</span></div>
+<div class="tags d"><span>liderar com</span><span>firmeza e</span><span>gentileza</span></div>
+<div class="i1-txt"><p>Um lugar para levar a situação real do seu trabalho e sair com um jeito de agir, ao lado de mulheres que vivem o mesmo.</p><a class="cta" href="#">Quero entrar na comunidade</a></div></div>
+<div class="mocks"><div><h3>Capa de carrossel</h3><div class="m post i1c"><div class="grao"></div><div class="raios"></div>
+<p class="k">Microagressão</p><h4>Se você sorri de nervoso quando alguém te desrespeita, <em>está ensinando que podem continuar.</em></h4>
+<img class="rec bw" src="midia/recorte-o21.png" alt=""><span class="ass">Wayne Valim</span><span class="desl">deslize →</span></div></div><div><h3>Capa de Reel</h3><div class="m reelc i1r"><div class="grao"></div><img class="rec" src="midia/recorte-reel.png" alt="">
+<div class="tags e"><span>numa reunião</span><span>tensa, qual</span><span>destas é você?</span></div></div></div></div>
+<div class="acoes" data-id="ID-1" data-nome="Ideia 1 (Papel e recorte)" data-sim="Gostei desta" data-nao="Não é a minha cara"><button type="button" class="ok">Gostei desta</button><button type="button" class="aj">Não é a minha cara</button><textarea rows="2" placeholder="O que você gostou ou mudaria? (opcional)"></textarea><p class="resp" hidden></p></div></section></section><section class="aba" id="ideia-2" hidden><section class="card ideia"><span class="fmt">Ideia 2 · direção visual</span><h2>Arco e bloco de cor</h2><p class="insp">Blocos de cor da marca, arcos e círculos emoldurando a sua foto, título grande e firme. É a mais &quot;cartaz&quot; das três, boa para anunciar a comunidade e eventos. Os textos são provisórios: o que vale aqui é o jeito.</p>
+<h3>Página da comunidade</h3><div class="m hero i2"><div class="i2-bloco"><p class="k">Comunidade Líder Corajosa</p><h3>Liderar sem desaparecer</h3>
+<p>Toda quinta, ao vivo, no Comitê da Clareza, a gente leva uma situação real do trabalho e sai com um jeito de agir.</p><a class="cta" href="#">Quero entrar</a></div>
+<div class="i2-foto"><div class="arco"></div><img class="rec" src="midia/recorte-o20.png" alt=""></div></div>
+<div class="mocks"><div><h3>Capa de carrossel</h3><div class="m post i2c"><div class="arco2"><img class="rec" src="midia/recorte-o16.png" alt=""></div>
+<p class="k">Microagressão</p><h4>Quando o seu sorriso vira permissão</h4><span class="ass">Wayne Valim · deslize →</span></div></div><div><h3>Capa de Reel</h3><div class="m reelc i2r"><h4>Qual destas é você?</h4><ol><li>Não escuta</li><li>Fala demais</li><li>Some</li><li>Só vê risco</li></ol>
+<div class="circ"><img src="midia/foto-reel.jpg" alt=""></div></div></div></div>
+<div class="acoes" data-id="ID-2" data-nome="Ideia 2 (Arco e bloco de cor)" data-sim="Gostei desta" data-nao="Não é a minha cara"><button type="button" class="ok">Gostei desta</button><button type="button" class="aj">Não é a minha cara</button><textarea rows="2" placeholder="O que você gostou ou mudaria? (opcional)"></textarea><p class="resp" hidden></p></div></section></section><section class="aba" id="ideia-3" hidden><section class="card ideia"><span class="fmt">Ideia 3 · direção visual</span><h2>Aspas e frase</h2><p class="insp">Uma frase sua em destaque, aspas gigantes, fundo de cor com textura e a sua foto em preto e branco. Para as frases que as pessoas querem guardar e mandar. Os textos são provisórios: o que vale aqui é o jeito.</p>
+<h3>Página da comunidade</h3><div class="m hero i3"><div class="grao"></div><div class="aspas">“</div><div class="estrela"></div>
+<div class="i3-txt"><h3>A gente quer uma liderança para influenciar as pessoas positivamente.</h3><p class="k">Wayne Valim, no Comitê da Clareza</p>
+<p>A Comunidade Líder Corajosa existe para isso: mulheres líderes que crescem juntas, toda quinta.</p><a class="cta" href="#">Conhecer a comunidade</a></div>
+<img class="rec bw" src="midia/recorte-o21.png" alt=""></div>
+<div class="mocks"><div><h3>Capa de carrossel</h3><div class="m post i3c"><div class="grao"></div><div class="aspas">“</div>
+<h4>Se você sorri de nervoso quando alguém te desrespeita, está ensinando que podem continuar.</h4><img class="rec bw" src="midia/recorte-o21.png" alt=""><span class="ass">@waynevalim</span></div></div><div><h3>Capa de Reel</h3><div class="m reelc i3r"><div class="grao"></div><h4>qual destas é você?</h4><p class="lado">um trecho do Comitê da Clareza sobre presença executiva</p>
+<img class="rec bw" src="midia/recorte-reel.png" alt=""></div></div></div>
+<div class="acoes" data-id="ID-3" data-nome="Ideia 3 (Aspas e frase)" data-sim="Gostei desta" data-nao="Não é a minha cara"><button type="button" class="ok">Gostei desta</button><button type="button" class="aj">Não é a minha cara</button><textarea rows="2" placeholder="O que você gostou ou mudaria? (opcional)"></textarea><p class="resp" hidden></p></div></section></section>
+<div class="enviar"><span id="conta">Nenhuma resposta ainda</span><button type="button" id="manda" disabled>Mandar respostas</button></div>
+</div>
+<script>
+(function () {
+  var abas = document.querySelectorAll(".aba"), links = document.querySelectorAll("nav.abas a");
+  function mostra() {
+    var h = (location.hash || "#pecas").slice(1), alvo = document.getElementById(h) ? h : "pecas";
+    var el = document.getElementById(alvo); if (el && !el.classList.contains("aba")) { var p = el.closest(".aba"); alvo = p ? p.id : "pecas"; }
+    abas.forEach(function (a) { a.hidden = a.id !== alvo; });
+    links.forEach(function (l) { l.classList.toggle("on", l.getAttribute("href") === "#" + alvo); });
+  }
+  window.addEventListener("hashchange", function () { mostra(); window.scrollTo({ top: 0 }); }); mostra();
+  document.querySelectorAll(".carr").forEach(function (c) {
+    var t = c.querySelector(".trilho"), pts = c.parentNode.querySelectorAll(".pontos button");
+    function at() { return Math.round(t.scrollLeft / t.clientWidth); }
+    function vai(i) { t.scrollTo({ left: i * t.clientWidth, behavior: "smooth" }); }
+    t.addEventListener("scroll", function () { pts.forEach(function (p, i) { p.classList.toggle("on", i === at()); }); });
+    pts.forEach(function (p, i) { p.onclick = function () { vai(i); }; }); if (pts[0]) pts[0].classList.add("on");
+    c.querySelector(".ant").onclick = function () { vai(Math.max(0, at() - 1)); };
+    c.querySelector(".prox").onclick = function () { vai(Math.min(pts.length - 1, at() + 1)); };
+  });
+  var R = {}, ORDEM = ["L02-02", "L02-03", "L02-01", "ID-1", "ID-2", "ID-3"];
+  document.querySelectorAll(".acoes").forEach(function (a) {
+    var ta = a.querySelector("textarea"), out = a.querySelector(".resp");
+    function marca(sim) {
+      var obs = ta.value.trim(), rot = sim ? a.dataset.sim : a.dataset.nao;
+      if (!sim && a.dataset.id.indexOf("L") === 0 && !obs) { ta.focus(); ta.placeholder = "Escreva o que você mudaria"; return; }
+      R[a.dataset.id] = a.dataset.nome + ": " + rot.toLowerCase() + (obs ? " (" + obs + ")" : "");
+      a.querySelector(".ok").classList.toggle("sel", sim); a.querySelector(".aj").classList.toggle("sel", !sim);
+      out.hidden = false; out.textContent = "Anotado: " + rot.toLowerCase();
+      var n = Object.keys(R).length;
+      document.getElementById("conta").textContent = n + (n === 1 ? " resposta anotada" : " respostas anotadas");
+      document.getElementById("manda").disabled = false;
+    }
+    a.querySelector(".ok").onclick = function () { marca(true); };
+    a.querySelector(".aj").onclick = function () { marca(false); };
+  });
+  document.getElementById("manda").onclick = function () {
+    var l = ["Lote 02 · minhas respostas"]; ORDEM.forEach(function (k) { if (R[k]) l.push(R[k]); });
+    window.open("https://wa.me/?text=" + encodeURIComponent(l.join("\n")), "_blank", "noopener");
+  };
+})();
+</script>
+</body>
+</html>
