@@ -10,3 +10,8 @@ Página aberta (sem senha, com noindex) em https://paulo-valim.github.io/apresen
 O Paulo escolhe a versão que vai para a Wayne; a outra sai. Sem números da comunidade (receita e assinantes) na página aberta.
 Publicar (só com pedido do Paulo): `python3 scripts/build_apresentacao.py && python3 scripts/build_apresentacao_v2.py && sh scripts/publicar_apresentacao.sh "o que mudou"`.
 As referências visuais de 20/11 ficam em `docs/brand/referencias-2026-11/` e não vão para a página (são trabalho de outras pessoas).
+
+## v3 (`/v3/`, 21/11/2026)
+
+Seis direções visuais, cada uma completa: página da comunidade inteira, o carrossel com os 7 slides e o Reel tocando com o texto no estilo da ideia (vídeo sem texto de `scripts/reel_limpo.py`; o texto é desenhado na página, sincronizado com a linha do tempo do Reel). Ideias 1–3 revistas da v2 (foto que afinava trocada, recortes com contorno de adesivo de `scripts/adesivo.py`); 4–6 novas (editorial bicolor, colagem, bloco e assinatura). `MOSTRAR` no topo de `scripts/build_apresentacao_v3.py` escolhe quais vão para a Wayne. Na aba Seus números, a conta que a API não lê saiu da tabela de referências.
+Gerar: `python3 scripts/build_apresentacao.py && python3 scripts/reel_limpo.py && python3 scripts/build_apresentacao_v3.py`.
